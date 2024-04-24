@@ -1,6 +1,22 @@
+body {
+  background-image: url(./sign_posts.png);
+  background-size: cover;
+  font-family: Consolas, monospace;
+  margin: 0;
+      padding: 0;
+      /* width: 100vw; */
+      background-size: cover;
+  background-position: center top -600px;
+
+}
 .App {
   text-align: center;
-}
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
 .App-logo {
   height: 40vmin;
@@ -39,7 +55,66 @@
 
 
 .container {
+  scale: 0.8;
   padding: 100px;
   justify-content: center;
   text-align: center;
+}
+
+.button {
+  font-family: Consolas, monospace;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: ;
+  text-decoration: none;
+  background: linear-gradient(45deg, #333 25%, transparent 25%), 
+              linear-gradient(-45deg, #333 25%, transparent 25%), 
+              linear-gradient(45deg, transparent 75%, #333 75%), 
+              linear-gradient(-45deg, transparent 75%, #333 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+
+  background: linear-gradient(-45deg, #333 25%, transparent 25%), 
+              linear-gradient(45deg, #333 25%, transparent 25%), 
+              linear-gradient(-45deg, transparent 75%, #333 75%), 
+              linear-gradient(45deg, transparent 75%, #333 75%);
+}
+
+.button-simple {
+  font-family: Consolas, monospace;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: ;
+  text-decoration: none;
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.button-simple:hover {
+  cursor: pointer;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+
+  background: grey;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+li {
+margin: 0px;
+}
+
+th, td {
+  width: 150px
 }
