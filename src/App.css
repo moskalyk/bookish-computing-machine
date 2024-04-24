@@ -68,10 +68,10 @@ body {
   font-size: 16px;
   color: ;
   text-decoration: none;
-  background: linear-gradient(45deg, #333 25%, transparent 25%), 
+  /* background: linear-gradient(45deg, #333 25%, transparent 25%), 
               linear-gradient(-45deg, #333 25%, transparent 25%), 
               linear-gradient(45deg, transparent 75%, #333 75%), 
-              linear-gradient(-45deg, transparent 75%, #333 75%);
+              linear-gradient(-45deg, transparent 75%, #333 75%); */
   background-size: 10px 10px;
   background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
   border: 2px solid #333;

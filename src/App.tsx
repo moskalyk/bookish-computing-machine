@@ -221,7 +221,7 @@ const App = () => {
         <p>inspire languages via keyboard</p>
         <br/>
         <br/>
-        <button className='button' onClick={() => login()}><span style={{background: 'white', padding: '5px'}}>sign in</span></button>
+        <button className='button' onClick={() => login()}><span>sign in</span></button>
       </div>
 
       </>:<>
@@ -234,7 +234,7 @@ const App = () => {
             <div>
               <button className='button-simple' onClick={() => setIsBridging(true)}>bridge</button>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <button className='button'><span style={{background: 'white', padding: '5px'}} onClick={() => setIsPlaying(true)}>play</span></button>
+              <button className='button'><span onClick={() => setIsPlaying(true)}>play</span></button>
               <br/>
               <br/>
               <h4>high scores</h4>
@@ -257,7 +257,7 @@ const App = () => {
               <br/>
               <br/>
               <br/>
-              <button className='button'><span style={{background: 'white', padding: '5px'}} onClick={() => {setGameSessionState([]);setCountdown(3);setGameTime(10);setIsBridging(false);setIsPlaying(false);}}>home screen</span></button>
+              <button className='button'><span onClick={() => {setGameSessionState([]);setCountdown(3);setGameTime(10);setIsBridging(false);setIsPlaying(false);}}>home screen</span></button>
             </div>
             </>
         :
@@ -300,10 +300,10 @@ const App = () => {
                   {gameSessionState.reduce((totalScore: any, state: any) => totalScore + state.score, 0)}
                 </p>
                 <br/>
-                <button className='button'><span style={{background: 'white', padding: '5px'}} onClick={() => {setGameSessionState([]);setCountdown(3);setGameTime(10);setIsPlaying(true);}}>play again</span></button>
+                <button className='button'><span onClick={() => {setGameSessionState([]);setCountdown(3);setGameTime(10);setIsPlaying(true);}}>play again</span></button>
                 <br/>
                 <br/>
-                <button className='button'><span style={{background: 'white', padding: '5px'}} onClick={() => {setGameSessionState([]);setCountdown(3);setGameTime(10);setIsPlaying(false);}}>home screen</span></button>
+                <button className='button'><span onClick={() => {setGameSessionState([]);setCountdown(3);setGameTime(10);setIsPlaying(false);}}>home screen</span></button>
               </div>
             </>
           }
